@@ -8,7 +8,7 @@ from collections import defaultdict
 import os
 
 URL = "http://localhost:8080/users"
-RATE_PER_SECOND = 700
+RATE_PER_SECOND = 20
 TOTAL_DURATION = 10  # Seconds to run the test
 LOG_DIR = "performance_logging"
 

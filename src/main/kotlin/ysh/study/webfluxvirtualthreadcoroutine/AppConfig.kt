@@ -18,4 +18,8 @@ class AppConfig {
     @Bean
     fun virtualThreadDispatcher(executor: ExecutorService): CoroutineDispatcher =
         executor.asCoroutineDispatcher()
+
+    @Bean
+    fun webClientBuilder(): org.springframework.web.reactive.function.client.WebClient.Builder =
+        org.springframework.web.reactive.function.client.WebClient.builder()
 }
